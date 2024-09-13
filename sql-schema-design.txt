@@ -1,0 +1,25 @@
+Scaler Schema Design: 
+
+Req: 
+1. Scaler will have multiple batches 
+2. For each batch, we need to store the name, start date and current instructor 
+3. Each batch of scaler will have multiple students 
+4. Each batch has multiple classes 
+5. For each class, store the name, date & time and instructor for the class 
+6. For every student, we store their name, grad year, university name, email and phone number 
+7. Every student has a buddy, who is also a student 
+8. A student may move from one batch to another 
+9. For each batch a student moves to the date of starting is stored 
+10. Every student has a mentor 
+11. For every mentor, we store their name and current company 
+12. Store information about all mentor sessions (time, duration, student, mentor, student rating and mentor rating) 
+13. For every batch, store if it is "Academy Batch" or "DSML Batch"
+
+Steps to follow for schema design : 
+1. Identify the nouns in the requirements and see if we need to store information about it. If yes, create a table for it. 
+2. Figure out the PK and what all direct attributes you need to put inside the table. 
+3. Start looking for relationships between tables and find out the cardinality between them. 
+4. Based on the cardinality, represent the relationships 
+  1:1 -> Either side id on either side 
+  1:m or m:1 -> 1 side side on m side 
+  m:m -> mapping table 
