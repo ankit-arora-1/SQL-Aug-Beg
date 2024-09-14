@@ -1,0 +1,10 @@
+Netflix Req: 
+1. Netflix has users 
+2. Eery user has an email and password 
+3. Users can create profiles to have separate independent environments 
+4. Each profile has a name and type. Type can be Kid or Adult 
+5. There are multiple videos on Netflix 
+6. For each video, there wull be title, description and a cast 
+7. A cast is a list of actors who were a part of the video. For each actor we need to know their name and list of videos they were a part of 
+8. For every video, for any profile, we need to know the status (completed / in-progress)
+9. For every profile for whome a video is in progress, we want to know their last watch timestamp
